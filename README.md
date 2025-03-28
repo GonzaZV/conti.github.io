@@ -1,1 +1,77 @@
 # conti.github.io
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Colorida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #ff758c;
+            margin: 20px 0;
+        }
+        nav {
+            background: linear-gradient(to right, #ff7eb3, #ff758c, #ff7eb3);
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .content p {
+            width: 30%;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Grupo D</h1>
+    <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#gonzalo">Gonzalo</a>
+        <a href="#lenin">Lenin</a>
+        <a href="#leonard">Leonard</a>
+        <a href="#yissel">Yissel</a>
+        <a href="#alejandro">Alejandro</a>
+    </nav>
+    <div class="container">
+        <h2>Conoce un poco más de nosotros</h2>
+        <p>Selecciona una opción en la barra de navegación para saber más.</p>
+        <div class="content">
+            <p>En Grupo D, nos enfocamos en presentar nuestros portafolios con un diseño moderno y atractivo. Queremos destacar nuestras habilidades y creatividad a través de proyectos visualmente impactantes.</p>
+            <p>Nuestros trabajos pasados reflejan nuestra experiencia y compromiso con la excelencia. Desde desarrollo web hasta diseño gráfico, cada proyecto cuenta una historia de aprendizaje y éxito.</p>
+            <p>Creemos en la importancia de compartir nuestros logros de manera accesible y clara. A través de nuestra plataforma, podrás conocer más sobre nuestras capacidades y cómo podemos contribuir a nuevos desafíos.</p>
+        </div>
+    </div>
+</body>
+</html>
