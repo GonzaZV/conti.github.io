@@ -19,7 +19,6 @@
         nav {
             background: linear-gradient(to right, #ff7eb3, #ff758c, #ff7eb3);
             padding: 15px;
-            text-align: center;
         }
         nav a {
             color: white;
@@ -36,13 +35,13 @@
         }
         .container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            gap: 50px;
             padding: 50px;
         }
         .left {
             text-align: center;
+            max-width: 600px;
         }
         .left img {
             width: 150px;
@@ -51,22 +50,23 @@
             object-fit: cover;
             border: 5px solid #ff758c;
         }
-        .right {
+        .images {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
         }
-        .right a {
+        .images a {
             display: block;
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             border: 3px solid #ff758c;
-            text-decoration: none;
-            overflow: hidden;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-        .right img {
+        .images img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -84,20 +84,17 @@
     <div class="container">
         <div class="left">
             <img src="gonzalo.jpg" alt="Imagen de perfil">
-            <p>Hola, soy Gonzalo y este es mi portafolio. soy estudiante de la universidad continental, en la carrera de ingenieria de sistemas
-ademas soy publicista con 5 años de experiencia, me gustaria algun dia ser desarrollador de aplicaciones en android</p>
+            <p>Hola, soy Gonzalo y este es mi portafolio. Soy estudiante de la Universidad Continental en la carrera de Ingeniería de Sistemas.
+               Además, soy publicista con 5 años de experiencia y me gustaría algún día ser desarrollador de aplicaciones en Android.</p>
         </div>
-        <div class="right">
+        <div class="images">
             <a href="trabajo1.html"><img src="pag1.jpeg" alt="Trabajo 1"></a>
             <a href="trabajo2.html"><img src="pag2.jpeg" alt="Trabajo 2"></a>
             <a href="trabajo3.html"><img src="pag3.jpeg" alt="Trabajo 3"></a>
+            <a href="trabajo4.html"><img src="pag4.jpeg" alt="Trabajo 4"></a>
+            <a href="trabajo5.html"><img src="pag5.jpeg" alt="Trabajo 5"></a>
+            <a href="trabajo6.html"><img src="pag6.jpeg" alt="Trabajo 6"></a>
         </div>
-        <div class="right">
-            <a href="trabajo1.html"><img src="pag4.jpeg" alt="Trabajo 4"></a>
-            <a href="trabajo2.html"><img src="pag5.jpeg" alt="Trabajo 5"></a>
-            <a href="trabajo3.html"><img src="pag6.jpeg" alt="Trabajo 6"></a>
-        </div>
-        
     </div>
 </body>
 </html>
