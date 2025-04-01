@@ -3,104 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preload" href="styleLeo.css" as="style">
+    <link rel="stylesheet" href="styleLeo.css">
     <title>Portafolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            color: #ff758c;
-            margin: 20px 0;
-        }
-        nav {
-            background: linear-gradient(to right, #ff7eb3, #ff758c, #ff7eb3);
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            margin: 0 10px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.3s;
-            border-radius: 5px;
-        }
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
-            padding: 50px;
-        }
-        .left {
-            text-align: center;
-        }
-        .left img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #ff758c;
-        }
-        .right {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .right a {
-            display: block;
-            width: 120px;
-            height: 120px;
-            border: 3px solid #ff758c;
-            text-decoration: none;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .right img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .borde-verde-2px{
-            border: 2px solid green;
-        }
+       
     </style>
 </head>
 <body>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <a href="Inicio.html">Inicio</a>                        
     </nav>
     <h1>Mi Portafolio</h1>
-    <div class="container">
-        <div class="left">
-            <img src="leonard.jpg" alt="Imagen de perfil">
-            <p>Hola, soy Leonard Samir Quispe Cardenas.</p>
-            <p>Soy estudiande de la carrera de Ingenieria de sistemas e informatica 4to Año, actuamente trabajo para una empresa financiera 
-                llamada Caja Incasur como Asistente de Produccion en el area de Tegnologia de Informacion, tengo bastante experiencia en el aspecto
-                de soporte de usuarios, pero ahora estoy interesado de ingresar al mundo de la programacion eh aprendido lenguaje de programacion
-                python, java y sql para las bases de datos desarrolle algunos proyectos y son:</p>
+    <main class="contenedor">
+        <div class="contenido">
+            <div class="contenido__articulo">
+                <article class="articulo">
+                    <section class="articulo__section">
+                        <p> <strong>Sobre mi :</strong>Soy estudiande de la carrera de Ingenieria de sistemas e informatica 4to Año, actuamente trabajo para una empresa financiera 
+                            llamada Caja Incasur como Asistente de Produccion en el area de Tegnologia de Informacion, tengo bastante experiencia en el aspecto
+                            de soporte de usuarios, pero ahora estoy interesado de ingresar al mundo de la programacion eh aprendido lenguaje de programacion
+                            python, java y sql para las bases de datos desarrolle algunos proyectos.</p>
+                    </section>
+                    <section class="articulo__section">
+                        <p> <strong>Proyectos :</strong>
+                            <p class="borde-verde-2px" >* Cree un programa que recopila informacion de una base de datos arma un archivo xml, y luego es enviado a un servidor SFTP.</p>                            
+                            <p class="borde-verde-2px" >* Cree un programa que genera un txtcodificado a partir de archivos excel y sentencias sql.</p>                            
+                            <p class="borde-verde-2px" >* Ademas cree diferentes programas para analisar datos en la medidad de lo requerido en mi area.</p>                            
+                    </section>                   
+                </article>
+                <div class="logos">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F62AD" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                          </svg>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#E65029" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                          </svg>
+                    </p>
+                     <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F3DE20" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M7.5 8h3v8l-2 -1" />
+                            <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                          </svg>
+                     </p>                      
+                </div>
+            </div>
+            <aside class="aside">
+                <div class="aside__imagen">
+                    <img src="leonard.jpg" alt="">
+                </div>
+                <div class="aside__caracteristicas">
+                    <h3><strong>Nombre:</strong> Leonard Samir Quispe Cardenas</h3>
+                    <h3><strong>Carrera:</strong> Ingenieria de sistemas e informatica</h3>
+                    <h3><strong>Habilidades:</strong> Java Script, HTML, CSS, Python, PostgresSQL, SQLServer</h3>
+                </div>
+            </aside>
         </div>
-        <div class="right">                        
-            <p class="borde-verde-2px" >* Cree un programa que recopila informacion de una base de datos arma un archivo xml, y luego es enviado a un servidor SFTP.</p>
-            <p class="borde-verde-2px" ><strong>SFTP</strong></p>
-            <p class="borde-verde-2px" >* Cree un programa que genera un txtcodificado a partir de archivos excel y sentencias sql.</p>
-            <p class="borde-verde-2px" ><strong>EXCEL Y TXT</strong></p>
-            <p class="borde-verde-2px" >* Ademas cree diferentes programas para analisar datos en la medidad de lo requerido en mi area.</p>
-            <p class="borde-verde-2px" ><strong>ANEXO17 SBS Y BSI BCR</strong></p>
+    </main>
+    <footer class="footer">
+        <div class="contenedor footer__contenido">
+            <div class="footer__texto">
+                <p class="no-margin">Derechos Reservados:</p>
+                <p class="footer__texto--nombre no-margin" >Leonard Samir Quispe Cardenas</p>
+            </div>
+            <div class="footer__redes">
+                <h3>Redes Sociales</h3>
+                <div class="footer__redes--mover">
+                    <a href="#">
+                        <img src="1x/facebook.png" alt="facebooklogo">
+                    </a>
+                    <a href="#">
+                        <img src="1x/instagram.png" alt="instragramlogo">
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
