@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/stylesAlejandro.css" as="style">
+    <link href="css/stylesAlejandro.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -75,22 +82,59 @@
 </head>
 <body>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <a href="Inicio.html">Inicio</a>        
     </nav>
     <h1>Mi Portafolio</h1>
-    <div class="container">
-        <div class="left">
-            <img src="alejandro.jpg" alt="Imagen de perfil">
-            <p>Hola, soy Alejandro Sebastian Verastegui Valenzuela.</p>
-        </div>
-        <div class="right">
-            <a href="trabajo1.html"><img src="trabajo1.jpg" alt="Trabajo 1"></a>
-            <a href="trabajo2.html"><img src="trabajo2.jpg" alt="Trabajo 2"></a>
-            <a href="trabajo3.html"><img src="trabajo3.jpg" alt="Trabajo 3"></a>
-        </div>
-    </div>
+    <section class="hero">     
+        <div class="contenido-hero">
+            <h2>Alejandro Sebastian Verastegui Valenzuela</h2>
+            <div class="contenedor descripcion">
+                <p >Estudiante de Ingeniería de Sistemas e Informática en la Universidad Continental del 4to ciclo, trabajo actualmente en Enterprise Solutions como Asistente de Soporte TI y redes, soy titulado de la carrera tecnica de Computacion e informatica.</p>
+            </div>            
+                <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    Arequipa, Perú</p>
+                <a class="boton" href="#">Contactar</a>
+        </div> 
+    </section>
+    
+    <main class="contenedor sombra">
+        <h2>Mis Servicios</h2>
+        <div class="aside">
+            <div class="aside__imagen">
+                <!-- <img src="img/alejandro.jpg" alt="imagenAlejandro"> -->
+            </div>        
+        </div>        
+            <div class="servicios">
+                <section class="servicio">
+                    <h3>SQL</h3>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2"> <path d="M14 3v4a1 1 0 0 0 1 1h4"></path> <path d="M14 3v4a1 1 0 0 0 1 1h4"></path> <path d="M5 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75"></path> <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4"></path> <path d="M18 15v6h2"></path> <path d="M13 15a2 2 0 0 1 2 2v2a2 2 0 1 1 -4 0v-2a2 2 0 0 1 2 -2z"></path> <path d="M14 20l1.5 1.5"></path> </svg> 
+                    </div>
+                    <p>Habilidades manejando bases de datos SQL server para mi empresa.</p>
+                </section>
+                <section class="servicio">
+                    <h3>CISCO</h3>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2"> <path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0"></path> <path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6"></path> <path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6"></path> <path d="M6 9h12"></path> <path d="M3 20h7"></path> <path d="M14 20h7"></path> <path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path> <path d="M12 15v3"></path> </svg> 
+                    </div>
+                    <p>Habilidades configurando dispositivos en red con CISCO CCNA, entre otros.</p>
+                </section>
+                <section class="servicio">
+                    <h3>REDES INFORMATICAS</h3>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2"> <path d="M6 18l0 -3"></path> <path d="M10 18l0 -6"></path> <path d="M14 18l0 -9"></path> <path d="M18 18l0 -12"></path> </svg> 
+                    </div>
+                    <p>Experto en configuracion de redes informaticas para empresas, configuracion cableado y estructurado como configuracion de software de redes. </p>    
+                </section>
+            </div><!--Aqui cierra etiqueta servicio-->      
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados Alejandro Sebastian Verastegui Valenzuela</p>
+    </footer>
 </body>
 </html>
