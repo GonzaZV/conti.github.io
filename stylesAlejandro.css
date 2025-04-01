@@ -125,7 +125,7 @@ h1,h2,h3{
 }
 
 .hero{
-    background-image: url(../hero.jpg);
+    background-image: url(imgAle/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -250,7 +250,7 @@ h1,h2,h3{
     }
 }
 .aside__imagen{
-    background-image: url(../alejandro.jpg);
+    background-image: url(imgAle/alejandro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
